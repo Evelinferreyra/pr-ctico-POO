@@ -6,7 +6,7 @@ class examen (Evento):
         self.asignatura = asignatura
 
     def __str__(self):
-        return f"{super().__str__()} - Examen de {self.materia}"
+        return f"{super().__str__()} - Examen de {self.asignatura}"
 
 class TrabajoPractico(Evento):
     def __init__(self, fecha, descripcion, asignatura):
