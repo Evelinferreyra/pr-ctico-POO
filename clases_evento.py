@@ -1,9 +1,9 @@
 from evento import Evento
 
 class examen (Evento):
-    def __init__(self, fecha, descripcion, materia):
+    def __init__(self, fecha, descripcion, asignatura):
         super().__init__(fecha, descripcion)
-        self.materia = materia
+        self.asignatura = asignatura
 
     def __str__(self):
         return f"{super().__str__()} - Examen de {self.materia}"
