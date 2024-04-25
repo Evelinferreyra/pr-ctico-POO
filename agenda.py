@@ -53,7 +53,7 @@ class Agenda:
         opcion = input("Ingrese el número del evento que quiere eliminar: ")
         if opcion.isdigit() and 1 <= int(opcion) <= len(self.eventos):
             eliminar_evento = self.eventos.pop(int(opcion) - 1)
-            print(f"Evento '{eliminar_evento.descripcion}' de la asignatura ´{eliminar_evento.asignatura}´ de la fecha {eliminar_evento.fecha} eliminado.")
+            print(f"Evento '{eliminar_evento.descripcion}' de la asignatura '{eliminar_evento.asignatura}' de la fecha {eliminar_evento.fecha} eliminado.")
             print("--------------------------------")
         else:
             print("Selección incorrecta. No se eliminó ningún evento.")
